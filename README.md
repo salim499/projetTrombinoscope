@@ -79,7 +79,7 @@ le modèle pour lequel on procédera sera le modèle de la grille (Trombinoscope
 
 * selon la division : afficher les statistiques seulement de la division choisi
 
-### lien vers le spreedsheets #
+# lien vers le spreedsheets #
 
 * https://docs.google.com/spreadsheets/d/1wkknBCnS33r8kzbGvexXsljoyvqxXsXj9ZYgHKLCcPg/edit?ts=5f9d3de3#gid=0
 
