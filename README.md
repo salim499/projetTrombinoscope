@@ -85,7 +85,7 @@ le modèle pour lequel on procédera sera le modèle de la grille (Trombinoscope
 
 
 Binome:
-Salim Hassouna 
+Salim Hassouna /
 Sabrina  BOUSSAD
 
 
