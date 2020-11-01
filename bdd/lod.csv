@@ -1,0 +1,11 @@
+Tables,colonnes,lien LODs
+arbitre,id_arb/nom_arb/niveau,http://dbpedia.org/ontology/Referee
+compétition,id_comp/nom_comp/manager,"compétition/match. compétition/création, http://www.bbc.co.uk/ontologies/sport/Competition"
+création,id_comp/id_org/date_debut/date_fin,http://reference.data.gov/def/govdata/count
+equipe,num_equipe/nom_equipe,"equipe/match. equipe/organisateur. equipe/joueur ,http://www.ontotext.com/proton/protonext#CanadianFootballTeam"
+joueur,id_jou/nom_jou/prenom_jou/niveau/num_maillo/age/taille/num_equipe,"joueur/equipe. joueur/organisateur, http://dbpedia.org/ontology/CanadianFootballPlayer"
+match,id_match/nom_equipe1/nom_equipe2/arbitre_principal/resultat/date/tour/id_arb/id_comp,"match/arbitre. match/equipe. match/compétition,http://dbpedia.org/ontology/FootballMatch"
+match_has_equipe,id_match/num_equipe,match_has_equipe/equipe. match_has_equipe/match
+organisateur,id_org/nom_org/id_jou/id_arb/num_equipe/id_stade/id_visit/joueur_equipe_num_equipe,organisateur/arbitre. organisateur/equipe. organisateur/joueur. organisateur/stade. organisateur/visiteur. organisateur/compétition
+stade,id_stade/localisation/nom_stade,"stade/organisateur,http://dbpedia.org/ontology/Stadium"
+visiteur,id_visit,visiteur/organisateur 
