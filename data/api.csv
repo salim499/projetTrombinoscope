@@ -1,0 +1,5 @@
+titre,url
+liste de tous les items,http://localhost/omeka/api/items
+specific item,http://localhost/omeka/api/items/:id
+liste des vocabulaires,http://localhost/omeka/api/vocabularies
+specefic vocabulaire,http://localhost/omeka/api/vocabularies/:id
