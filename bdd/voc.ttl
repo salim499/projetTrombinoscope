@@ -1,67 +1,88 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix teach: <http://linkedscience.org/teach/ns#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/> .
-@prefix omeka: <https://ligueFootbal.fr/omeka> .
+@prefix omeka: <https://liguehandball.fr/omeka> .
 @prefix /ns/ui#size: <http://www.w3.org> .
 @prefix qb4olap.ttl#LevelAttribute: <http://> .
 
-<https://ligueFootbal.fr/omeka> a owl:Ontology ;
+<https://liguehandball.fr/leaguefootbal> a owl:Ontology ;
     dcterms:title "Equipe joueur" .
 
 
-omeka:Joueur a rdfs:Class ;
+leaguefootbal:Joueur a rdfs:Class ;
     rdfs:label "Joueur" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-omeka:Stade a rdfs:Class ;
+leaguefootbal:Arbitre a rdfs:Class ;
+    rdfs:label "Arbitre" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+leaguefootbal:Stade a rdfs:Class ;
     rdfs:label "Stade" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
+    rdfs:domaine o:Ressource;
+    vs:term_status "expérimental" .
 
-omeka:Organisateur a rdfs:Class ;
+leaguefootbal:Organisateur a rdfs:Class ;
     rdfs:label "Organisateur" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
+    rdfs:domaine o:Ressource;
+    vs:term_status "expérimental" .
 
-omeka:Match_has_Equipe a rdfs:Class ;
-    rdfs:label "Match_has_Equipe" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-omeka:Visiteur a rdfs:Class ;
+leaguefootbal:Visiteur a rdfs:Class ;
     rdfs:label "Visiteur" ;
+    rdfs:domaine o:Ressource;
+    vs:term_status "expérimental" .
+
+
+leaguefootbal:Match a rdfs:Class;
+    rdfs:label " Match " ;
+    rdfs:domaine o:Ressource;
+    vs:term_status " expérimental " .
+
+leaguefootbal:Competition a rdfs:Class;
+    rdfs:label " Competition " ;
+    rdfs:domaine o:Ressource;
+    vs:term_status " expérimental " .
+
+
+leaguefootbal:Equipe a rdfs:Class ;
+    rdfs:label "Equipe" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-omeka:Creation a rdfs:Class ;
-    rdfs:label "création" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
 
-omeka:Match a rdfs:Class ;
-    rdfs:label "Match" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
+leaguefootbal:taille a rdf:Property;
+    rdfs:label " taille " ;
+    rdfs:domaine o:Ressource;
+    rdfs:isDefinedBy leaguefootbal:.
 
-omeka:Competition a rdfs:Class ;
-    rdfs:label "Compétition" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
+leaguefootbal:niveau a rdf:Property;
+    rdfs:label " niveau " ;
+    rdfs:domaine o:Ressource;
+    rdfs:isDefinedBy leaguefootbal:.
 
-omeka:size a rdf:Property ;
-    rdfs:label "size" ;
-    rdfs:domain o:Resource ;
-    rdfs:isDefinedBy omeka: .
 
-omeka:level a rdf:Property ;
-    rdfs:label "level" ;
+leaguefootbal:age a rdf:Property ;
+    rdfs:label "age" ;
     rdfs:domain o:Resource ;
-    rdfs:isDefinedBy omeka: .
+    rdfs:isDefinedBy leaguefootbal: .
 
+leaguefootbal:couleur a rdf:Property ;
+    rdfs:label "couleur" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy leaguefootbal: .
+	
+leaguefootbal:nationalité a rdf:Property ;
+    rdfs:label "nationalité" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy leaguefootbal: .
+	
+
+leaguefootbal:nombrecompetition a rdf:Property;
+    rdfs:label "nombre competition" ;
+    rdfs:domaine o:Ressource;
+    rdfs:isDefinedBy leaguefootbal:.
+
+leaguefootbal:nombreequipe a rdf:Property;
+    rdfs:label "nombre equipe" ;
+    rdfs:domaine o:Ressource;
+    rdfs:isDefinedBy leaguefootbal:.
