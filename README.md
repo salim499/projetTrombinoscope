@@ -89,6 +89,8 @@ le modèle pour lequel on procédera sera le modèle de la grille (Trombinoscope
 
 * https://docs.google.com/spreadsheets/d/1wkknBCnS33r8kzbGvexXsljoyvqxXsXj9ZYgHKLCcPg/edit?ts=5f9d3de3#gid=0
 
+   [https://salim499.github.io/projetTrombinoscope/](https://salim499.github.io/projetTrombinoscope/ "texte pour le titre, facultatif")
+
 *  la page readme.md du projet = https://salim499.github.io/projetTrombinoscope/
 
 *  le répertoire du vrai template = https://salim499.github.io/projetTrombinoscope/template/futureTemplate/
