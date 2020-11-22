@@ -1,5 +1,11 @@
 titre,url
 liste de tous les items,/api/items
 specific item,/api/items/:id
+la collection des joueurs de ligue1,/api/items?item_set_id=40
+la collection des compétitions,/api/items?item_set_id=41
+la collection des equipes de ligue1,/api/items?item_set_id=42
+la collection de tous les matchs,/api/items?item_set_id=43
+la collection de tous les arbitres,/api/items?item_set_id=44
+la collection des sixs stades relatives aux équipes,/api/items?item_set_id=45
 liste des vocabulaires,/api/vocabularies
 specefic vocabulaire,/api/vocabularies/:id
