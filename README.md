@@ -95,9 +95,9 @@ le modèle pour lequel on procédera sera le modèle de la grille (Trombinoscope
    - la répertoire du template = https://[salim499].github.io/[projetTrombinoscope]/template
 
 
-# lien vers le Readme #
+# lien vers le Readme.md #
 
-   [Lien readme](https://salim499.github.io/projetTrombinoscope/ "Page readme, ")
+   [Readme](https://salim499.github.io/projetTrombinoscope/ "Page readme, ")
    
 # lien vers le nouveau template #
    
