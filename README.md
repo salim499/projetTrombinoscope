@@ -89,6 +89,11 @@ le modèle pour lequel on procédera sera le modèle de la grille (Trombinoscope
 
    [Spreedsheets](https://docs.google.com/spreadsheets/d/1wkknBCnS33r8kzbGvexXsljoyvqxXsXj9ZYgHKLCcPg/edit?ts=5f9d3de3#gid=0 "Spreedsheets, ")
 
+# les liens avec le format demandé #
+
+   - la page readme.md du projet = https://[salim499].github.io/[projetTrombinoscope]/
+   - la répertoire du template = https://[salim499].github.io/[projetTrombinoscope]/template
+
 
 # lien vers le Readme #
 
