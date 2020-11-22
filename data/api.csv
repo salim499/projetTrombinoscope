@@ -1,11 +1,18 @@
 titre,url
 liste de tous les items,/api/items
 specific item,/api/items/:id
-la collection des joueurs de ligue1,/api/items?item_set_id=40
-la collection des compétitions,/api/items?item_set_id=41
-la collection des equipes de ligue1,/api/items?item_set_id=42
-la collection de tous les matchs,/api/items?item_set_id=43
-la collection de tous les arbitres,/api/items?item_set_id=44
-la collection des sixs stades relatives aux équipes,/api/items?item_set_id=45
+la collection joueurs,/api/items?item_set_id=40
+la collection compétitions,/api/items?item_set_id=41
+la collection equipes,/api/items?item_set_id=42
+la collection matchs,/api/items?item_set_id=43
+la collection arbitres,/api/items?item_set_id=44
+la collection des sixs stades,/api/items?item_set_id=45
+l'ensemble de tous les stades,/api/items?resource_class_id[]=110
+l'ensemble de tous les équipes,/api/items?resource_class_id[]=109
+l'ensemble de tous les arbitres,/api/items?resource_class_id[]=108
+l'ensemble de tous les joueurs,/api/items?resource_class_id[]=107
+l'ensemble de tous les matchs,/api/items?resource_class_id[]=106
+l'ensemble de toutes les compétitions,/api/items?resource_class_id[]=111
 liste des vocabulaires,/api/vocabularies
 specefic vocabulaire,/api/vocabularies/:id
+
