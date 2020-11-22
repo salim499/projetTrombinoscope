@@ -2,4 +2,4 @@ titre,url
 liste de tous les items,/api/items
 specific item,/api/items/:id
 liste des vocabulaires,/api/vocabularies
-specefic vocabulaire,a/api/vocabularies/:id
+specefic vocabulaire,/api/vocabularies/:id
