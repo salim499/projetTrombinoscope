@@ -87,15 +87,21 @@ le modèle pour lequel on procédera sera le modèle de la grille (Trombinoscope
 
 # lien vers le spreedsheets #
 
-* https://docs.google.com/spreadsheets/d/1wkknBCnS33r8kzbGvexXsljoyvqxXsXj9ZYgHKLCcPg/edit?ts=5f9d3de3#gid=0
+   [Spreedsheets](https://docs.google.com/spreadsheets/d/1wkknBCnS33r8kzbGvexXsljoyvqxXsXj9ZYgHKLCcPg/edit?ts=5f9d3de3#gid=0 "Spreedsheets, ")
 
-   [https://salim499.github.io/projetTrombinoscope/](https://salim499.github.io/projetTrombinoscope/ "texte pour le titre, facultatif")
 
-*  la page readme.md du projet = https://salim499.github.io/projetTrombinoscope/
+# lien vers le Readme #
 
-*  le répertoire du vrai template = https://salim499.github.io/projetTrombinoscope/template/futureTemplate/
+   [Lien readme](https://salim499.github.io/projetTrombinoscope/ "Page readme, ")
+   
+# lien vers le nouveau template #
+   
+   [Future template](https://salim499.github.io/projetTrombinoscope/template/futureTemplate/ "Future template, ")
+   
+# lien vers le template en cours #
+   
+   [Template en cours](https://salim499.github.io/projetTrombinoscope/template/ "Template en cours, ")
 
-*  le répertoire du vrai template = https://salim499.github.io/projetTrombinoscope/template/futureTemplate/
 
 
 
