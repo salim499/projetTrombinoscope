@@ -116,15 +116,13 @@ function remplirDom(data){
   })
 }
 
-//let linkApi = "http://localhost/omeka/api/items";
+let linkApi = "https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g8/omk/api/items";
 
 async function recupererData(){
 
-//let data= await fetch(linkApi)
+let data= await fetch(linkApi)
 
-//let dataJson=await data.json()
-
-dataJson=itemsJson
+let dataJson=await data.json()
 
 remplirDom(dataJson)
 
