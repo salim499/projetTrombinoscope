@@ -1,10 +1,5 @@
 
 
-fetch("../data/items.json")
-.then(response => {
-   return response.json();
-})
-.then(data => console.log(data));
 /*
 function Filter(e){
     let dom=document.getElementById('dom')
