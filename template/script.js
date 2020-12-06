@@ -1,75 +1,4 @@
 
-
-/*
-function Filter(e){
-    let dom=document.getElementById('dom')
-    dom.innerHTML=""
-    if(e){
-        let element=items.find(item=>item["dcterms:title"][0]['@value']===e)
-        dom.innerHTML=dom.innerHTML+
-        `
-        <div class="card" style="width: 20rem;">
-            <img src=${element["foaf:img"][0]['@value']} class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${element["dcterms:title"][0]['@value']}</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#" class="card-link">
-                Profession : ${element["@type"][1].split(":")[1]}
-              </a>
-                </li>
-              <li class="list-group-item">
-                <a href="#" class="card-link">
-                Equipe : ${element["dcterms:isPartOf"][0]['display_title']}
-                </a>
-                </li>
-            </ul>
-            <div class="card-body">
-              <li class="list-group-item">
-              <a href="#" class="card-link">..............</a>
-            </li>
-            </div>
-          </div>
-        `  
-    }else if(e===null) {
-        console.log(items)
-        items.forEach(element => {
-          let dom=document.getElementById('dom')
-          dom.innerHTML=dom.innerHTML+
-          `
-          <div class="card" style="width: 20rem;">
-              <img src=${element["foaf:img"][0]['@value']} class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">${element["dcterms:title"][0]['@value']}</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <a href="#" class="card-link">
-                  Profession : ${element["@type"][1].split(":")[1]}
-                </a>
-                  </li>
-                <li class="list-group-item">
-                  <a href="#" class="card-link">
-                  Equipe : ${element["dcterms:isPartOf"][0]['display_title']}
-                  </a>
-                  </li>
-              </ul>
-              <div class="card-body">
-                <li class="list-group-item">
-                <a href="#" class="card-link">..............</a>
-              </li>
-              </div>
-            </div>
-          `
-          console.log(element)
-        });
-    }   
-}
-Filter(null)
-*/
-
-
 let equipes=[]
 let joueurs=[]
 let stades=[]
@@ -85,7 +14,7 @@ function remplirDom(data){
     let dom=document.getElementsByClassName("space")[0]
     dom.innerHTML=dom.innerHTML+
     `
-    <div class="card" style="width: 400px;">
+    <div class="card" style={{width: "400px;"}}>
         <img src=${element["foaf:img"][0]['@value']} class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${element["dcterms:title"][0]['@value']}</h5>
@@ -101,12 +30,8 @@ function remplirDom(data){
             </a>
             </li>
         </ul>
-        <div class="card-body">
-          <li class="list-group-item">
-          <a href="#" class="card-link">..............</a>
-        </li>
-        </div>
       </div>
+
     `
   })
 }
@@ -119,7 +44,15 @@ let data= await fetch(linkApi)
 
 let dataJson=await data.json()
 
-remplirDom(dataJson)
+
+if(dataJson[0]!=null){
+  remplirDom(dataJson)
+} else {
+  let dom=document.getElementsByClassName("space")[0]
+  dom.innerHTML=`<h1>
+  Oups, aucun élément ne correspond à votre recherche
+  </h1>`    
+}
 
 dataJson.forEach(element => {
 
@@ -164,3 +97,18 @@ function Filter(e){
     remplirDom(dataJsons)
   }
 }
+
+function chercher(){
+    let input=document.getElementById("inputText")
+    let dataFiltered=dataJsons.filter(e=>((e["dcterms:title"][0]['@value']).toLowerCase()).includes((input.value).toLowerCase())
+    ||((input.value).toLowerCase()).includes((e["dcterms:title"][0]['@value']).toLowerCase()))
+    if(dataFiltered[0]!=null){
+      remplirDom(dataFiltered)
+    } else {
+      let dom=document.getElementsByClassName("space")[0]
+      dom.innerHTML=`<h1>
+      Oups, aucun élément ne correspond à votre recherche
+      </h1>`    
+    }
+
+  }
