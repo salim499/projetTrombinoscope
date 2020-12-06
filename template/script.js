@@ -15,7 +15,7 @@ function remplirDom(data){
     dom.innerHTML=dom.innerHTML+
     `
     <div class="card" style={{width: "400px;"}}>
-        <img src=${element["foaf:img"][0]['@value']} class="card-img-top" alt="...">
+        <img src=${element['thumbnail_display_urls'].square} class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${element["dcterms:title"][0]['@value']}</h5>
         </div>
@@ -46,7 +46,9 @@ let dataJson=await data.json()
 
 
 if(dataJson[0]!=null){
+
   remplirDom(dataJson)
+
 } else {
   let dom=document.getElementsByClassName("space")[0]
   dom.innerHTML=`<h1>
@@ -55,6 +57,9 @@ if(dataJson[0]!=null){
 }
 
 dataJson.forEach(element => {
+  console.log()
+  console.log(element['thumbnail_display_urls'].medium)
+  console.log(element['thumbnail_display_urls'].large)
 
   if(element["@type"][1].split(":")[1]=="Athlete"){
     joueurs.push(element)
@@ -110,5 +115,42 @@ function chercher(){
       Oups, aucun élément ne correspond à votre recherche
       </h1>`    
     }
-
   }
+
+ async function omekaFunction(){
+  let dom=document.getElementsByClassName("space")[0]
+  dom.innerHTML=""
+
+  let linkApiCollection='https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g8/omk/api/vocabularies'
+  let data= await fetch(linkApiCollection)
+  let dataJson=await data.json()
+
+  dataJson.forEach(e=>{
+    console.log(e)
+    dom.innerHTML=dom.innerHTML+
+    `
+    <table class="table table-dark" id="table">
+    <thead>
+      <tr>
+        <th scope="col">Element</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <th scope="col">Id</th>
+        <td>${e["o:id"]}</td>
+      </tr>
+      <tr>
+      <td>Label</td>
+      <td>${e["o:label"]}</td>
+      </tr>
+      <tr>
+      <td>Prefix</td>
+      <td>${e["o:prefix"]}</td>
+      </tr>
+    </tbody>
+  </table>
+    `
+  })
+}
